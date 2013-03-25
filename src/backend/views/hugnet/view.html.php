@@ -59,8 +59,31 @@ class HUGnetViewHUGnet extends Jview
     * The display class
     */
     function display($tpl = null){
+        // Set the toolbar
+        $this->addToolBar();
+
         parent::display($tpl);
 
+        // Set the document
+        $this->setDocument();
+
+    }
+    /**
+    * Setting the toolbar
+    */
+    protected function addToolBar()
+    {
+            JToolBarHelper::preferences('com_hugnet');
+    }
+    /**
+    * Method to set up the document properties
+    *
+    * @return void
+    */
+    protected function setDocument()
+    {
+            $document = JFactory::getDocument();
+            $document->setTitle(JText::_('COM_HUGNET_ADMINISTRATION'));
     }
 
 }

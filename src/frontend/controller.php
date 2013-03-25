@@ -63,6 +63,18 @@ class HUGnetController extends JController
     }
 
 
+
+    /**
+    * Gets the base URL to use
+    *
+    * @return string The URL
+    */
+    private function _url()
+    {
+        return JComponentHelper::getComponent('com_hugnet')->params->get(
+            "hugnet_api_url"
+        );
+    }
     /**
     * This deals with the device
     *
@@ -71,7 +83,7 @@ class HUGnetController extends JController
     public function device()
     {
         $query = array();
-        $url = "http://localhost/HUGnetLib/HUGnetLibAPI.php";
+        $url = $this->_url();
         $command = trim(strtolower(JRequest::getCmd('action')));
         switch ($command) {
         case "get":
@@ -107,7 +119,7 @@ class HUGnetController extends JController
     public function history()
     {
         $query = array();
-        $url = "http://localhost/HUGnetLib/HUGnetLibAPI.php";
+        $url = $this->_url();
         $command = trim(strtolower(JRequest::getCmd('action')));
         $data = (array)JRequest::getVar('data', array());
         $id = JRequest::getVar('id');
