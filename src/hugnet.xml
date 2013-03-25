@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="2.5.0" method="upgrade" client="site">
+    <name>Hugnet</name>
+    <creationDate>2012-12-01</creationDate>
+    <author>Scott Price</author>
+    <authorEmail>prices@hugllc.com</authorEmail>
+    <authorUrl>http://www.hugllc.com</authorUrl>
+    <copyright>Copyright © 2012 - All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <version>0.0.1</version>
+    <description><![CDATA[Displays HUGnet Data]]></description>
+    <files folder="frontend">
+        <filename>index.html</filename>
+        <filename>hugnet.php</filename>
+        <filename>controller.php</filename>
+        <filename>helper.php</filename>
+        <filename>views/index.html</filename>
+        <filename>views/hugnet/index.html</filename>
+        <filename>views/hugnet/view.html.php</filename>
+        <filename>views/hugnet/metadata.xml</filename>
+        <filename>views/hugnet/tmpl/index.html</filename>
+        <filename>views/hugnet/tmpl/default.php</filename>
+        <filename>views/hugnet/tmpl/default.xml</filename>
+        <filename>models/index.html</filename>
+        <filename>models/hugnet.php</filename>
+        <filename>controllers/index.html</filename>
+        <filename>controllers/hugnet.php</filename>
+        <filename>assets/index.html</filename>
+        <filename>assets/images/index.html</filename>
+        <filename>assets/css/index.html</filename>
+        <filename>assets/javascript/index.html</filename>
+    </files>
+    <languages folder="lang-frontend">
+        <language tag="en-GB">en-GB/en-GB.com_hugnet.ini</language>
+    </languages>
+    <installfile>install.hugnet.php</installfile>
+    <uninstallfile>uninstall.hugnet.php</uninstallfile>
+    <administration>
+        <menu>Hugnet</menu>
+        <files folder="backend">
+            <filename>index.html</filename>
+            <filename>admin.hugnet.php</filename>
+            <filename>controller.php</filename>
+            <filename>helper.php</filename>
+            <filename>CHANGELOG.php</filename>
+            <filename>config.xml</filename>
+            <filename>views/index.html</filename>
+            <filename>views/hugnet/index.html</filename>
+            <filename>views/hugnet/view.html.php</filename>
+            <filename>views/hugnet/tmpl/index.html</filename>
+            <filename>views/hugnet/tmpl/default.php</filename>
+            <filename>models/index.html</filename>
+            <filename>models/hugnet.php</filename>
+            <filename>elements/index.html</filename>
+            <filename>helpers/index.html</filename>
+            <filename>helpers/hugnet.php</filename>
+            <filename>tables/index.html</filename>
+            <filename>assets/index.html</filename>
+            <filename>assets/images/index.html</filename>
+            <filename>assets/css/index.html</filename>
+            <filename>assets/javascript/index.html</filename>
+        </files>
+        <!-- Language backend -->
+        <languages folder="lang-backend">
+            <language tag="en-GB">en-GB/en-GB.com_hugnet.ini</language>
+        </languages>
+    </administration>
+</install>
