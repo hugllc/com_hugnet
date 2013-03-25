@@ -63,5 +63,81 @@ class HUGnetController extends JController
     }
 
 
+    /**
+    * This deals with the device
+    *
+    * @return null
+    */
+    public function device()
+    {
+        $query = array();
+        $url = "http://localhost/HUGnetLib/HUGnetLibAPI.php";
+        $command = trim(strtolower(JRequest::getCmd('action')));
+        switch ($command) {
+        case "get":
+            $id = JRequest::getVar('id');
+            $id = sprintf("%06X", hexdec($id));
+            $query = array(
+                "task" => "device",
+                "action" => $command,
+                "id" => $id,
+            );
+            break;
+        case "list":
+            $data = (array)JRequest::getVar('data', array());
+            $query = array(
+                "task" => "device",
+                "action" => $command,
+                "data" => $data,
+            );
+            break;
+        }
+        if (count($query) > 0) {
+            $url = $url."?".http_build_query($query);
+            $response = file_get_contents($url);
+            print $response;
+            unset($response);
+        }
+    }
+    /**
+    * This deals with the history
+    *
+    * @return null
+    */
+    public function history()
+    {
+        $query = array();
+        $url = "http://localhost/HUGnetLib/HUGnetLibAPI.php";
+        $command = trim(strtolower(JRequest::getCmd('action')));
+        $data = (array)JRequest::getVar('data', array());
+        $id = JRequest::getVar('id');
+        $id = sprintf("%06X", hexdec($id));
+        switch ($command) {
+        case "get":
+            $query = array(
+                "task" => "history",
+                "action" => "get",
+                "id" => $id,
+                "data" => $data,
+            );
+            break;
+        case "last":
+            $query = array(
+                "task" => "history",
+                "action" => "last",
+                "id" => $id,
+                "data" => $data,
+            );
+            break;
+        }
+        if (count($query) > 0) {
+            $url = $url."?".http_build_query($query);
+            $response = file_get_contents($url);
+            print $response;
+            unset($response);
+        }
+    }
+
+
 }
 ?>
