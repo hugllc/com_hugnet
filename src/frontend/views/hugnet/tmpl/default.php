@@ -38,3 +38,23 @@ defined('_JEXEC') or die('Restricted access');
 
 
 ?>
+        <h1 class="header">Endpoints</h1>
+        <div id="hugnetview">
+        <div id="tabs-tests"></div>
+        <?php print $this->loadTemplate("data"); ?>
+        <?php print $this->loadTemplate("export"); ?>
+        <?php print $this->loadTemplate("tests"); ?>
+        </div>
+        <script type="text/javascript">
+            HUGnetView.Devices = new HUGnet.Devices({
+                url: 'index.php?option=com_hugnet&format=json'
+            });
+            HUGnetView.Devices.fetch();
+
+            $(document).ready(function(){
+                "use strict";
+                var iface = new HUGnetView.main({
+                    url: 'index.php?option=com_hugnet&format=json'
+            }   );
+            });
+        </script>
