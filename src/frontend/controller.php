@@ -87,12 +87,12 @@ class HUGnetController extends JController
         $command = trim(strtolower(JRequest::getCmd('action')));
         switch ($command) {
         case "get":
-            $id = JRequest::getVar('id');
-            $id = sprintf("%06X", hexdec($id));
+            $did = JRequest::getVar('id');
+            $did = sprintf("%06X", hexdec($did));
             $query = array(
                 "task" => "device",
                 "action" => $command,
-                "id" => $id,
+                "id" => $did,
             );
             break;
         case "list":
@@ -122,14 +122,14 @@ class HUGnetController extends JController
         $url = $this->_url();
         $command = trim(strtolower(JRequest::getCmd('action')));
         $data = (array)JRequest::getVar('data', array());
-        $id = JRequest::getVar('id');
-        $id = sprintf("%06X", hexdec($id));
+        $did = JRequest::getVar('id');
+        $did = sprintf("%06X", hexdec($did));
         switch ($command) {
         case "get":
             $query = array(
                 "task" => "history",
                 "action" => "get",
-                "id" => $id,
+                "id" => $did,
                 "data" => $data,
             );
             break;
@@ -137,7 +137,7 @@ class HUGnetController extends JController
             $query = array(
                 "task" => "history",
                 "action" => "last",
-                "id" => $id,
+                "id" => $did,
                 "data" => $data,
             );
             break;
