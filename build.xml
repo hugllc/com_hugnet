@@ -83,7 +83,7 @@
         <exec executable="phpcs" output="/dev/null">
             <arg line="--report=checkstyle
                         --report-file=${basedir}/build/logs/checkstyle.xml
-                        --ignore=build/,Documentation/,JoomlaMock/,tmpl/,old/,contrib/,HUGnetLib/
+                        --ignore=build/,Documentation/,pepper-grinder/,tmpl/,old/,contrib/,HUGnetLib/
                         --standard=PEAR
                         ${source}" />
         </exec>
