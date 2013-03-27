@@ -36,7 +36,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-jimport( 'joomla.application.component.view' );
+jimport('joomla.application.component.view');
 /**
  * This is the base class for the view.
  *
@@ -54,26 +54,40 @@ class HUGnetViewHUGnet extends Jview
 {
     /**
     * The display function
+    *
+    * @param string $tpl The template to use
+    *
+    * @return null
     */
-    function display($tpl = null){
+    function display($tpl = null)
+    {
         // Get the component
         $component = JComponentHelper::getComponent('com_hugnet');
         $api_url = $component->params->get("hugnet_api_url");
 
 
-        // static mixed script (string $file, [boolean $framework = false], [boolean $relative = false], [boolean $path_only = false], [boolean $detect_browser = true], [boolean $detect_debug = true])
+        /*
+        static mixed script (string $file, [boolean $framework = false],
+            [boolean $relative = false], [boolean $path_only = false],
+            [boolean $detect_browser = true], [boolean $detect_debug = true])
+        */
         JHTML::script(dirname($api_url)."/contrib.js");
         JHTML::script(dirname($api_url)."/hugnet.js");
+        $filebase = "components".DS."com_hugnet".DS."views".DS."hugnet";
         JHTML::script(
-            "components".DS."com_hugnet".DS."views".DS."hugnet".DS."view.js"
+            $filebase.DS."view.js"
         );
 
-        //static mixed stylesheet (string $file, [array $attribs = array()], [boolean $relative = false], [boolean $path_only = false], [boolean $detect_browser = true], [boolean $detect_debug = true])
+        /*
+        static mixed stylesheet (string $file, [array $attribs = array()],
+            [boolean $relative = false], [boolean $path_only = false],
+            [boolean $detect_browser = true], [boolean $detect_debug = true])
+        */
         JHTML::stylesheet(
-            "components".DS."com_hugnet".DS."views".DS."hugnet".DS."default.css"
+            $filebase.DS."default.css"
         );
         JHTML::stylesheet(
-            "components".DS."com_hugnet".DS."views".DS."hugnet".DS."pepper-grinder/jquery-ui.css"
+            $filebase.DS."pepper-grinder/jquery-ui.css"
         );
 
         parent::display($tpl);

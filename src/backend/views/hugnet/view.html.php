@@ -36,7 +36,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-jimport( 'joomla.application.component.view' );
+jimport('joomla.application.component.view');
 /**
  * Base driver class for devices.
  *
@@ -57,19 +57,24 @@ class HUGnetViewHUGnet extends Jview
 {
     /**
     * The display class
+    *
+    * @param string $tpl The template to use
+    *
+    * @return null
     */
-    function display($tpl = null){
+    function display($tpl = null)
+    {
         // Set the toolbar
         $this->addToolBar();
-
         parent::display($tpl);
-
         // Set the document
         $this->setDocument();
 
     }
     /**
     * Setting the toolbar
+    *
+    * @return null
     */
     protected function addToolBar()
     {
@@ -78,7 +83,7 @@ class HUGnetViewHUGnet extends Jview
     /**
     * Method to set up the document properties
     *
-    * @return void
+    * @return null
     */
     protected function setDocument()
     {

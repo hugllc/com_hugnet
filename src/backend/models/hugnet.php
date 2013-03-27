@@ -36,7 +36,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-jimport( 'joomla.application.component.model' );
+jimport('joomla.application.component.model');
 /**
  * Base admin class for hugnet
  *
@@ -55,7 +55,8 @@ class HUGnetModelHUGnet extends Jmodel
     /**
     * The constructor for this class
     */
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
     }
 

@@ -53,7 +53,9 @@ $(function ()
         {
             this.render();
             if (options) {
-                if (options.url) this.url = options.url;
+                if (options.url) {
+                    this.url = options.url;
+                }
             }
         },
         render: function ()
