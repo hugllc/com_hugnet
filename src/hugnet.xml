@@ -9,6 +9,31 @@
     <license>GNU/GPL</license>
     <version>0.0.1</version>
     <description><![CDATA[Displays HUGnet Data]]></description>
+    <!--
+    <scriptfile>script.php</scriptfile>
+    -->
+    <install> <!-- Runs on install -->
+        <!--
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+        -->
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <!--
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+        -->
+    </uninstall>
+    <update> <!-- Runs on update -->
+        <!--
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+        -->
+    </update>
+    -->
     <files folder="frontend">
         <filename>index.html</filename>
         <filename>hugnet.php</filename>
@@ -94,4 +119,9 @@
             <language tag="en-GB">en-GB/en-GB.com_hugnet.ini</language>
         </languages>
     </administration>
+    <!-- Update server definition -->
+    <updateservers>
+            <!-- Note: No spaces or linebreaks allowed between the server tags -->
+            <server type="extension" priority="1" name="HUGnet Update Site">http://downloads.hugllc.com/Joomla/com_hugnet/com_hugnet-update.xml</server>
+    </updateservers>
 </install>
