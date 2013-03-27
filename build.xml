@@ -105,7 +105,8 @@
     </target>
 
 
-    <target name="build" depends="clean,pdepend,phpmd,phpcpd,phpcs,phpdoc,phploc,phpunit,phpcb"/>
+    <target name="build" depends="clean"/>
+    <target name="test" depends="clean,pdepend,phpmd,phpcpd,phpcs,phpdoc,phploc,phpunit,phpcb"/>
     <target name="package" depends="package.build"/>
 
 </project>
