@@ -46,7 +46,7 @@ jimport('joomla.application.component.controller');
  * @author     Scott Price <prices@hugllc.com>
  * @copyright  2013 Hunt Utilities Group, LLC
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
- * @version    Release: 0.0.1
+ * @version    Release: 0.0.2
  * @link       http://dev.hugllc.com/index.php/Project:com_hugnet
  * @since      0.0.1
  */

@@ -32,7 +32,7 @@
  * @copyright  2008-2011 Hunt Utilities Group, LLC
  * @copyright  2009 Scott Price
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
- * @version    SVN: $Id$
+ * @version    Release: 0.0.2
  * @link       https://dev.hugllc.com/index.php/Project:Comtimeclock
  */
 
