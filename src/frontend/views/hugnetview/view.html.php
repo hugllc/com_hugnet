@@ -50,7 +50,7 @@ jimport('joomla.application.component.view');
  * @link       http://dev.hugllc.com/index.php/Project:com_hugnet
  * @since      0.0.1
  */
-class HUGnetViewHUGnet extends Jview
+class HUGnetViewHUGnetView extends Jview
 {
     /**
     * The display function
@@ -73,7 +73,7 @@ class HUGnetViewHUGnet extends Jview
         */
         JHTML::script(dirname($api_url)."/contrib.js");
         JHTML::script(dirname($api_url)."/hugnet.js");
-        $filebase = "components".DS."com_hugnet".DS."views".DS."hugnet";
+        $filebase = "components".DS."com_hugnet".DS."views".DS."hugnetview";
         JHTML::script(
             $filebase.DS."view.js"
         );
