@@ -74,6 +74,7 @@ class HUGnetViewHUGnetView extends Jview
         JHTML::script(dirname($api_url)."/contrib.js");
         JHTML::script(dirname($api_url)."/hugnet.js");
         $filebase = "components".DS."com_hugnet".DS."views".DS."hugnetview";
+        $assetbase = "components".DS."com_hugnet".DS."assets";
         JHTML::script(
             $filebase.DS."view.js"
         );
@@ -87,7 +88,7 @@ class HUGnetViewHUGnetView extends Jview
             $filebase.DS."default.css"
         );
         JHTML::stylesheet(
-            $filebase.DS."pepper-grinder/jquery-ui.css"
+            $assetbase.DS."css".DS."pepper-grinder".DS."jquery-ui.css"
         );
 
         parent::display($tpl);
