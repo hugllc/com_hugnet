@@ -58,3 +58,7 @@ defined('_JEXEC') or die('Restricted access');
             }   );
             });
         </script>
+        <div>
+            <span style="float: right; padding: 5px;">Powered by <a href="http://www.hugllc.com">HUGnetLab</a>&trade;</span>
+            <div>&copy; Copyright 2013 <a href="http://www.hugllc.com">Hunt Utilities Group, LLC</a></div>
+        </div>

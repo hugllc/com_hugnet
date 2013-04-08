@@ -141,7 +141,7 @@
 
 /* JQuery Table Sorter Stuff */
 #hugnetview th.header {
-    background-image: url(images/sort_small.png);
+    background-image: url('../../assets/images/sort_small.png');
     cursor: pointer;
     font-weight: bold;
     background-repeat: no-repeat;
@@ -151,13 +151,13 @@
 }
 
 #hugnetview th.headerSortUp {
-    background-image: url(images/sort_small_asc.png);
+    background-image: url('../../assets/images/sort_small_asc.png');
     background-color: #205700;
     color: white;
 }
 
 #hugnetview th.headerSortDown {
-    background-image: url(images/sort_small_desc.png);
+    background-image: url('../../assets/images/sort_small_desc.png');
     background-color: #205700;
     color: white;
 }

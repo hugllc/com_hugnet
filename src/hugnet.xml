@@ -52,10 +52,10 @@
         <filename>views/hugnetview/tmpl/default_data.php</filename>
         <filename>views/hugnetview/tmpl/default_tests.php</filename>
         <filename>views/hugnetview/tmpl/default.xml</filename>
-        <filename>views/hugnetview/images/sort_small.png</filename>
-        <filename>views/hugnetview/images/sort_small_desc.png</filename>
-        <filename>views/hugnetview/images/sort_small_asc.png</filename>
-        <filename>views/hugnetview/images/PoweredBy.png</filename>
+        <filename>assets/images/sort_small.png</filename>
+        <filename>assets/images/sort_small_desc.png</filename>
+        <filename>assets/images/sort_small_asc.png</filename>
+        <filename>assets/images/PoweredBy.png</filename>
         <filename>views/hugnetview/default.css</filename>
         <filename>views/hugnetview/view.js</filename>
         <filename>assets/css/pepper-grinder/images/ui-icons_ffffff_256x240.png</filename>
