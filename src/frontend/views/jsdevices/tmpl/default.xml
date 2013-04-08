@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="jsdevices">
+        <message>
+            <![CDATA[JavaScript Devices Layout]]>
+        </message>
+    </layout>
+    <state>
+        <name>JavaScript Devices Layout</name>
+        <description>
+            This layout is identical to HUGnetView, except it shows all devices
+            instead of just the tests.
+        </description>
+        <params>
+        </params>
+    </state>
+</metadata>

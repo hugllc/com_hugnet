@@ -42,8 +42,6 @@
         <filename>views/index.html</filename>
         <filename>views/hugnetview/index.html</filename>
         <filename>views/hugnetview/images/index.html</filename>
-        <filename>assets/css/pepper-grinder/index.html</filename>
-        <filename>assets/css/pepper-grinder/images/index.html</filename>
         <filename>views/hugnetview/view.html.php</filename>
         <filename>views/hugnetview/metadata.xml</filename>
         <filename>views/hugnetview/tmpl/index.html</filename>
@@ -52,12 +50,29 @@
         <filename>views/hugnetview/tmpl/default_data.php</filename>
         <filename>views/hugnetview/tmpl/default_tests.php</filename>
         <filename>views/hugnetview/tmpl/default.xml</filename>
+        <filename>views/hugnetview/default.css</filename>
+        <filename>views/hugnetview/view.js</filename>
+
+        <filename>views/jsdevices/view.html.php</filename>
+        <filename>views/jsdevices/metadata.xml</filename>
+        <filename>views/jsdevices/tmpl/index.html</filename>
+        <filename>views/jsdevices/tmpl/default.php</filename>
+        <filename>views/jsdevices/tmpl/default_export.php</filename>
+        <filename>views/jsdevices/tmpl/default_data.php</filename>
+        <filename>views/jsdevices/tmpl/default_devicelist.php</filename>
+        <filename>views/jsdevices/tmpl/default.xml</filename>
+        <filename>views/jsdevices/index.html</filename>
+        <filename>views/jsdevices/images/index.html</filename>
+        <filename>views/jsdevices/default.css</filename>
+        <filename>views/jsdevices/view.js</filename>
+
+
         <filename>assets/images/sort_small.png</filename>
         <filename>assets/images/sort_small_desc.png</filename>
         <filename>assets/images/sort_small_asc.png</filename>
         <filename>assets/images/PoweredBy.png</filename>
-        <filename>views/hugnetview/default.css</filename>
-        <filename>views/hugnetview/view.js</filename>
+        <filename>assets/css/pepper-grinder/index.html</filename>
+        <filename>assets/css/pepper-grinder/images/index.html</filename>
         <filename>assets/css/pepper-grinder/images/ui-icons_ffffff_256x240.png</filename>
         <filename>assets/css/pepper-grinder/images/ui-bg_fine-grain_15_eceadf_60x60.png</filename>
         <filename>assets/css/pepper-grinder/images/ui-bg_fine-grain_15_f7f3de_60x60.png</filename>

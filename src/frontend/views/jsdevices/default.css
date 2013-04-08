@@ -1,0 +1,208 @@
+<!--
+/**
+ *   <pre>
+ *   CoreUI is a user interface for the HUGnet cores.
+ *   Copyright (C) 2007 Hunt Utilities Group, LLC
+ *
+ *   This program is free software; you can redistribute it and/or
+ *   modify it under the terms of the GNU General Public License
+ *   as published by the Free Software Foundation; either version 3
+ *   of the License, or (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, write to the Free Software
+ *   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *   </pre>
+ *
+ *   @license http://opensource.org/licenses/gpl-license.php GNU Public License
+ *   @package CoreUI
+ *   @subpackage CSS
+ *   @copyright 2007 Hunt Utilities Group, LLC
+ *   @author Scott Price <prices@hugllc.com>
+ *   @version $Id$
+ *
+ */
+-->
+#hugnetview .bold {
+    font-weight: bold;
+}
+
+#hugnetview .buttons {
+    margin: 5px;
+}
+#hugnetview .floatright {
+    float: right;
+}
+#hugnetview .indent {
+    padding-left: 2em;
+}
+
+#hugnetview .nowrap {
+    white-space: nowrap;
+}
+
+
+#hugnetview #nodename {
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+#hugnetview .center {
+    text-align: center;
+}
+#hugnetview .right {
+    text-align: right;
+}
+#hugnetview .left {
+    text-align: left;
+}
+
+#hugnetview th {
+    background: #AAA;
+}
+
+#hugnetview textarea {
+    width: 100%;
+}
+#hugnetview tr.odd {
+    background: #f7f3de;
+}
+
+#hugnetview tr.even {
+    background-color: #d9d6c4;
+}
+
+#hugnetview .hmenu {
+    background:#205700;
+}
+
+#hugnetview ul.hmenu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#hugnetview ul.hmenu li
+{
+    background-image: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+    margin: 0;
+    line-height: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#hugnetview ul.hmenu li a
+{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: transparent;
+    border-right: 2px solid #205700;
+}
+
+#hugnetview ul.hmenu li a.active, #hugnetview ul.hmenu li a:hover {
+    background:#e5dabd;
+    color: #000;
+}
+
+#hugnetview th.leftproperty {
+    text-align: right;
+}
+
+#hugnetview button.backToList {
+    float: right;
+}
+
+#hugnetview .leftHeader {
+    text-align: right;
+    padding-right: 3px;
+}
+/* Device polling stuff */
+
+#hugnetview td.dataindex {
+    text-align: center;
+}
+
+
+/* JQuery Table Sorter Stuff */
+#hugnetview th.header {
+    background-image: url('../../assets/images/sort_small.png');
+    cursor: pointer;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 20px;
+    padding-left: 2px;
+}
+
+#hugnetview th.headerSortUp {
+    background-image: url('../../assets/images/sort_small_asc.png');
+    background-color: #205700;
+    color: white;
+}
+
+#hugnetview th.headerSortDown {
+    background-image: url('../../assets/images/sort_small_desc.png');
+    background-color: #205700;
+    color: white;
+}
+
+#hugnetview #tabs-tests {
+    margin-top: 1em;
+}
+#hugnetview #tabs-tests li .ui-state-default {
+    white-space: nowrap;
+}
+#hugnetview #tabs-tests { margin-top: 1em; }
+#hugnetview #tabs-tests li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+#hugnetview #add_tab { cursor: pointer; }
+
+
+
+/* Flot Stuff */
+#hugnetview #flot-legend {
+    background: white;
+    width: 100%;
+}
+
+#hugnetview ul#flot-choice {
+    background: white;
+    list-style: none;
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+}
+#hugnetview ul#flot-choice li {
+    display: inline-block;
+    margin: 2px;
+    line-height: 110%;
+    padding: 2px;
+}
+#hugnetview #flot-graph {
+    width: 100%;
+    height: 300px;
+}
+
+/* Time Picker stuff */
+#hugnetview .ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+#hugnetview .ui-timepicker-div dl { text-align: left; }
+#hugnetview .ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+#hugnetview .ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+#hugnetview .ui-timepicker-div td { font-size: 90%; }
+#hugnetview .ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
