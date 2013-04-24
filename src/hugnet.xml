@@ -67,9 +67,6 @@
         <filename>views/jsdevices/view.js</filename>
 
 
-        <filename>assets/images/sort_small.png</filename>
-        <filename>assets/images/sort_small_desc.png</filename>
-        <filename>assets/images/sort_small_asc.png</filename>
         <filename>assets/images/PoweredBy.png</filename>
         <filename>assets/css/pepper-grinder/index.html</filename>
         <filename>assets/css/pepper-grinder/images/index.html</filename>
@@ -90,6 +87,7 @@
         <filename>assets/css/pepper-grinder/images/ui-bg_fine-grain_68_b83400_60x60.png</filename>
         <filename>assets/css/pepper-grinder/jquery-ui.min.css</filename>
         <filename>assets/css/pepper-grinder/jquery-ui.css</filename>
+        <filename>assets/css/tablesorter.default.css</filename>
         <filename>models/index.html</filename>
         <filename>models/hugnet.php</filename>
         <filename>controllers/index.html</filename>

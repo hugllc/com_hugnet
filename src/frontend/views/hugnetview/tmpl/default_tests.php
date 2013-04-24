@@ -37,15 +37,15 @@
                 </form>
         </script>
         <script type="text/template" id="TestListTemplate">
-                <table id="devTable" class="tablesorter">
+                <table id="devTable" class="tablesorter {sortlist: [[1,0]]}">
                     <thead>
                     <tr>
-                        <th class="{sorter: false}">Actions</th>
-                        <th class="{sorter: 'numeric'}">Test ID</th>
-                        <th class="{sorter: 'text'}">Name</th>
-                        <th class="{sorter: 'text'}">Data Interval<br>(Seconds)</th>
-                        <th class="{sorter: 'text'}">Created</th>
-                        <th class="{sorter: 'text'}">Last Modified</th>
+                        <th class="sorter-false">Actions</th>
+                        <th class="sorter-hex">Test ID</th>
+                        <th class="sorter-text">Name</th>
+                        <th class="sorter-text">Data Interval<br>(Seconds)</th>
+                        <th class="sorter-usLongDate">Created</th>
+                        <th class="sorter-usLongDate">Last Modified</th>
                     </tr>
                     </thead>
                     <tbody id="TestList">

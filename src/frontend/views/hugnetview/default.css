@@ -139,28 +139,6 @@
 }
 
 
-/* JQuery Table Sorter Stuff */
-#hugnetview th.header {
-    background-image: url('../../assets/images/sort_small.png');
-    cursor: pointer;
-    font-weight: bold;
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding-right: 20px;
-    padding-left: 2px;
-}
-
-#hugnetview th.headerSortUp {
-    background-image: url('../../assets/images/sort_small_asc.png');
-    background-color: #205700;
-    color: white;
-}
-
-#hugnetview th.headerSortDown {
-    background-image: url('../../assets/images/sort_small_desc.png');
-    background-color: #205700;
-    color: white;
-}
 
 #hugnetview #tabs-tests {
     margin-top: 1em;

@@ -90,6 +90,9 @@ class HUGnetViewJSDevices extends Jview
         JHTML::stylesheet(
             $assetbase.DS."css".DS."pepper-grinder".DS."jquery-ui.css"
         );
+        JHTML::stylesheet(
+            $assetbase.DS."css".DS."tablesorter.default.css"
+        );
 
         parent::display($tpl);
 
